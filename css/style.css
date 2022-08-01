@@ -430,95 +430,27 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.article__range-item {
-  flex: 0 1 47%;
-  position: relative;
-  margin-bottom: 1rem;
-}
-.article__skills-inner {
+
+.article__skills-list{
   display: flex;
   justify-content: space-between;
-}
-.article__skills-items {
-  flex: 0 1 47%;
-}
-.article__skills-content {
-  flex: 0 1 47%;
-  padding-top: 2rem;
-}
-.article__range-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0.3rem;
-  font-size: 14px;
-  color: var(--gray-color);
+  padding: 15px 0;
 }
 
-.article__range-title {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.05em;
-  font-weight: 400;
-  margin-bottom: 0.3rem;
+.article__skills-item{
+display: flex;
+align-items:center;
+gap: 5px;
+font-size: 16px;
+width: 20%;
+
 }
-.article__range-line {
-  max-width: 440px;
-  height: 15px;
-  background-color: #dad8cb;
+.article__skills-item img{
+width: 48px;
+height: 48px;
+
 }
-.article__range-level {
-  background-color: var(--yellow-color);
-  height: 100%;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-.level--active {
-  animation: level 1s 500ms linear forwards;
-}
-.html {
-  width: 80%;
-}
-.css {
-  width: 75%;
-}
-.js {
-  width: 60%;
-}
-.autocad {
-  width: 90%;
-}
-.inventor {
-  width: 85%;
-}
-.figma {
-  width: 65%;
-}
-.photoshop {
-  width: 70%;
-}
-.max {
-  width: 60%;
-}
-@keyframes level {
-  100% {
-    transform: scaleX(1);
-  }
-}
-#code-link {
-  cursor: pointer;
-  transition: 0.3s;
-}
-#code-link span {
-  font-weight: 700;
-}
-pre {
-  display: none;
-  margin: 0;
-}
-.active {
-  display: block;
-}
+
 .footer {
   position: relative;
   background-color: var(--accent-black-color);
